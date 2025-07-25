@@ -45,8 +45,19 @@
 
 .imgf{
     position:relative;
-    display:inline-block
+    display:inline-block;
+    width: 100%;
+  max-width: 100%;
 }
+
+
+.imgf img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 
 .flot{
     position: absolute;
@@ -74,8 +85,71 @@
 
 }
 
+.img-grd{
+   display: flex;
+   gap: 28px;
+  
+}
+
+.text-deco{
+    position: absolute;
+    
+    transform: translateX(85px) translateY(80px);
+    text-align: center;
+}
+.text-deco2{
+    position: absolute;
+   
+    transform: translateX(200px) translateY(200px);
+    text-align: center;
+}
+
+/* s4 */
 
 
+
+/* .s4-trans {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding-top: 5rem;  
+  padding-bottom: 5rem;
+  /* transform: translateY(170px); */
+
+
+/* footer  */
+footer{
+    margin-top: 50px;
+}
+
+.full{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ .grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+.grid-list li {
+ 
+  padding: 10px;
+  text-align: center;
+}
+
+.icon{
+    display: flex;
+    gap: 20px;
+    
+}
 /* shared style */
 .btn1{
     width: 270px;
@@ -87,7 +161,7 @@
 
 
 
-@media  screen and (max-width:500px) {
+@media  screen and (max-width:600px) {
     .nav-title{
         width: 22rem ;
         margin: 0 auto;
@@ -147,5 +221,29 @@
     }
     .pd{
         padding: 20px;
+    }
+   .img-grd{
+    flex-direction: column;
+   }
+    .s3-title{
+        max-width: 393px;
+        margin: 0 auto;
+    }
+    .s3-title p{
+        white-space: normal;
+        width: 400px;
+    }
+    
+    
+
+
+    /* footer  */
+    .full{
+        flex-direction: column;
+
+    }
+    .grid-list{
+        grid-template-columns: repeat(1,1fr);
+        
     }
 }
