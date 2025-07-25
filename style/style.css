@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.nav-title{
+    display: flex;
+    justify-content: space-between;
+    max-width: 72rem;
+    margin: 0 auto;
+    align-items: center;  
+    margin-top: 2rem; 
+}
+
+
+@media  screen and (max-width:400px) {
+    .nav-title{
+        width: 22rem ;
+        margin: 0 auto;
+        margin-top: 2rem ;
+    }
+    
+}
